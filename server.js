@@ -5,6 +5,7 @@ dotenv.config();
 // cors gave me problems last time, this time I'll make sure it works.
 const cors = require('cors'); 
 const bakuganRoutes = require('./routes/bakugan');
+const classicRoutes = require('./routes/classic');
 // adding swagger
 const app = express();
 const swaggerUi = require('swagger-ui-express');
@@ -22,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/bakugan', bakuganRoutes);
+app.use('/classic', classicRoutes);
 
 //Connect to MongoDB and start the server
 mongoose.connect(process.env.MONGO_URL)

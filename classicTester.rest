@@ -1,0 +1,31 @@
+### Get main page
+GET http://localhost:3000
+
+### Get all Classic Bakugan
+GET http://localhost:3000/classic
+
+### Create Classic Bakugan
+POST http://localhost:3000/classic HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Skyress",
+    "gpower": "400",
+    "attribute": "Ventus"
+}
+
+### Update Classic Bakugan
+PUT http://localhost:3000/classic/687a952d372652b2cd60957e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Skyress",
+    "gpower": 400,
+    "attribute": "Sub-terra"
+}
+
+
+### Delete Classic Bakugan
+DELETE http://localhost:3000/classic/687a952d372652b2cd60957e
+
+
