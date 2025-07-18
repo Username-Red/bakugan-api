@@ -6,8 +6,8 @@ const doc = {
     title: 'Bakugan API',
     description: 'API documentation for Bakugan project',
   },
-  host: 'https://bakugan-api.onrender.com', //will be render later
-  schemes: ['http', 'https'],
+  host: 'bakugan-api.onrender.com', //will be render later
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
