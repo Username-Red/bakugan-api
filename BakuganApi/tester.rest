@@ -1,0 +1,45 @@
+### Get main page
+GET http://localhost:3000
+
+### Get all Bakugan
+GET http://localhost:3000/bakugan
+
+### Create Bakugan
+POST http://localhost:3000/bakugan HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Nillious",
+    "type": "Core",
+    "faction": "Aquos",
+    "power": 300,
+    "damage": 4,
+    "cores": [
+      "Magic Shield",
+      "Orange Shield"
+    ],
+    "effect": "Magic Shield: +200B and +2 Frost Strike"
+}
+
+### Update Bakugan
+PUT http://localhost:3000/bakugan/687958a28ef351e9603e1fb4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Nillious",
+    "type": "Core",
+    "faction": "Aquos",
+    "power": 300,
+    "damage": 4,
+    "cores": [
+      "Magic Shield",
+      "Orange Shield"
+    ],
+    "effect": "Magic Shield: +200B and +2❄️"
+}
+
+
+### Delete Bakugan
+DELETE http://localhost:3000/bakugan/687958a28ef351e9603e1fb4
+
+
