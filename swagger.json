@@ -5,10 +5,11 @@
     "description": "API documentation for Bakugan project",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://bakugan-api.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
