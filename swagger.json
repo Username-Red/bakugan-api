@@ -5,7 +5,7 @@
     "description": "API documentation for Bakugan project",
     "version": "1.0.0"
   },
-  "host": "https://bakugan-api.onrender.com",
+  "host": "bakugan-api.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
