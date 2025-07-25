@@ -6,7 +6,7 @@ router.use("/", require("./swagger"));
 
 router.get("/", (req, res) => {
     //#swagger.tags = ["Hello World"];
-    res.send("Welcome to the Bakugan API");
+    res.send(req.session.user != undefined ? `Logged in as ${req.session.user.displayName}` : 'Logged Out')
     
 });
 
