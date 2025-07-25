@@ -16,7 +16,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerFile = require('./swagger.json');
 
 //Middleware
-app.use(cors()); 
+// app.use(cors()); 
 app.use(express.json());
 // swagger UI
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
@@ -75,9 +75,9 @@ app.get('/github/callback', passport.authenticate('github', {
 
 
 //Routes
-app.get('/', (req, res) => {
-  res.send('Bakugan API is running!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Bakugan API is running!');
+// });
 
 app.use('/bakugan', bakuganRoutes);
 app.use('/classic', classicRoutes);
